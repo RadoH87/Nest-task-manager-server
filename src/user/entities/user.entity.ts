@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Task } from '../../task/entities/task.entity';
 
 @Entity()
 export class User {
@@ -16,7 +17,7 @@ export class User {
   lastName: string;
 
   @Column({
-    length: 255,
+    length: 2,
   })
   email: string;
 
@@ -25,4 +26,8 @@ export class User {
 
   @Column()
   role: string;
+
+  // one user can have multiple tasks
+  @OneToMany(() => Task, (task) => task.user)
+  tasks: Task[];
 }
