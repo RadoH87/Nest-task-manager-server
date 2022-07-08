@@ -22,6 +22,10 @@ export class UserService {
     return user;
   }
 
+  findUserById(id: string) {
+    return this.userRepository.findOneOrFail({ where: { id } });
+  }
+
   async findAll() {
     return await this.userRepository.find();
   }

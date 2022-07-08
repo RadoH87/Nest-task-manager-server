@@ -1,33 +1,48 @@
-import { Injectable } from '@nestjs/common';
+import { Inject, Injectable } from '@nestjs/common';
 import { CreateTaskDto } from './dto/create-task.dto';
-import { UpdateTaskDto } from './dto/update-task.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Task } from './entities/task.entity';
+import { UserService } from '../user/user.service';
 
 @Injectable()
 export class TaskService {
   constructor(
     @InjectRepository(Task) private taskRepository: Repository<Task>,
+    @Inject(UserService)
+    private userService: UserService,
   ) {}
 
-  create(createTaskDto: CreateTaskDto) {
-    return 'This action adds a new task';
+  async create(createTaskDto: CreateTaskDto, userId: string) {
+    const task = new Task();
+    task.title = createTaskDto.title;
+    task.date = new Date().toLocaleString();
+    task.completed = false;
+    task.user = await this.userService.findUserById(userId);
+    return this.taskRepository.save(task);
   }
 
-  findAll() {
-    return `This action returns all task`;
+  async findAllTaskByUserNotCompleted(userId: string) {
+    // userid not completed
+    return await this.taskRepository.find({
+      relations: ['user'],
+      where: { user: { id: userId }, completed: false },
+    });
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} task`;
+  async findAllTaskByUserCompleted(userId: string) {
+    // userid not completed
+    return await this.taskRepository.find({
+      relations: ['user'],
+      where: { user: { id: userId }, completed: true },
+    });
   }
 
-  update(id: number, updateTaskDto: UpdateTaskDto) {
-    return `This action updates a #${id} task`;
+  update(taskId: string) {
+    return this.taskRepository.update(taskId, { completed: true });
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} task`;
+  remove(taskId: string) {
+    return this.taskRepository.delete(taskId);
   }
 }
