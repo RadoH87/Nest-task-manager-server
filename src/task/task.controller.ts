@@ -11,36 +11,35 @@ import {
 import { TaskService } from './task.service';
 import { CreateTaskDto } from './dto/create-task.dto';
 
-@Controller"task"')
+@Controller('task')
 export class TaskController {
-  constructor(private readonly taskService: TaskService) {
-  }
+  constructor(private readonly taskService: TaskService) {}
 
-  @Post"/:userId"')
+  @Post('/:userId')
   create(
     @Body(ValidationPipe) createTaskDto: CreateTaskDto,
-    @Param"userId"') userId: strin,
+    @Param('userId') userId: string,
   ) {
     return this.taskService.create(createTaskDto, userId);
   }
 
-  @Get"/findAllNotCompleted/:userId"')
-  findAllTaskByUserNotCompleted(@Param"userId"') userId: string) {
+  @Get('/findAllNotCompleted/:userId')
+  findAllTaskByUserNotCompleted(@Param('userId') userId: string) {
     return this.taskService.findAllTaskByUserNotCompleted(userId);
   }
 
-  @Get"/findAllCompleted/:userId"')
-  findOne(@Param"userId"') userId: string) {
+  @Get('/findAllCompleted/:userId')
+  findOne(@Param('userId') userId: string) {
     return this.taskService.findAllTaskByUserCompleted(userId);
   }
 
-  @Patch":id"')
-  update(@Param"id"') id: string) {
+  @Patch(':id')
+  update(@Param('id') id: string) {
     return this.taskService.update(id);
   }
 
-  @Delete":id"')
-  remove(@Param"id"') id: string) {
+  @Delete(':id')
+  remove(@Param('id') id: string) {
     return this.taskService.remove(id);
   }
 }
