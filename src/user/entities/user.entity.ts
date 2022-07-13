@@ -17,7 +17,7 @@ export class User {
   lastName: string;
 
   @Column({
-    length: 2,
+    length: 255,
   })
   email: string;
 
