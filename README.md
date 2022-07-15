@@ -28,11 +28,13 @@
 Provide MySQL Parameters
 in .env file accordingly :
 
+```bash
 DATABASE_HOST
 DATABASE_PORT
 DATABASE_USERNANE
 DATABASE_PASSWORD
 DATABASE_NAME
+```
 
 ## Description
 
