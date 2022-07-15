@@ -1,5 +1,39 @@
-<h1 align="center">🔥 Task-Mnager-App 🔥</h1>
+<h1 align="center">🔥 Task-Manager-App 🔥</h1>
+<hr/>
 
+### Project currently in progress 👷‍♂️
+
+### WHAT YOU CAN DO WITH IT?
+<hr/>
+
+- You can add/remove tasks.
+- You can create User account.
+- You can login and register.
+- As a admin you can manage all users and tasks.
+<br/>
+<br/>
+### 🚀PURPOSE OF CREATING THE APP🚀
+
+I made this APP to learn Nest.js and typeORM Databases. This application helped me understand and deepen my knowledge of how powerful Nest js is and how quickly you can build a fantastic backend.
+<br/>
+<br/>
+### TECHNOLOGY:
+
+- Nest.js
+- TypeORM
+- MySql DB
+- JWT (Json Web Token)
+<br/>
+<br/>
+### TODO:
+- deployment and migration DB
+- forgot password - send email with code to reset password.
+- finish password hashing process then comper the email, to let users login to prevent holding plain data   password in DB.
+- Snapshot testing with Jest.
+- Testing coverage report.
+- Endpoint testing.
+<br/>
+<br/>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
