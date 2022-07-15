@@ -20,6 +20,7 @@ I made this APP to learn Nest.js and typeORM Databases. This application helped 
 ### TECHNOLOGY:
 
 - Nest.js
+- TypeScript
 - TypeORM
 - MySql DB
 - JWT (Json Web Token)
