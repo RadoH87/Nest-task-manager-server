@@ -21,7 +21,8 @@
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-  
+
+<h1 align="center">Task-Mnaager-App</h1>
   
 ## NestJs Configuration
 
