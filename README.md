@@ -21,6 +21,18 @@
 </p>
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  
+  
+## NestJs Configuration
+
+Provide MySQL Parameters
+in .env file accordingly :
+
+DATABASE_HOST
+DATABASE_PORT
+DATABASE_USERNANE
+DATABASE_PASSWORD
+DATABASE_NAME
 
 ## Description
 
