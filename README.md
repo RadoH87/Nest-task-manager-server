@@ -25,8 +25,8 @@ I made this APP to learn Nest.js and typeORM Databases. This application helped 
 - JWT (Json Web Token)
 <br/>
 <br/>
-### TODO:
 
+### TODO:
 - deployment and migration DB
 - forgot password - send email with code to reset password.
 - finish password hashing process then comper the email, to let users login to prevent holding plain data   password in DB.
