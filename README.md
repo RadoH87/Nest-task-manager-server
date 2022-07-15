@@ -1,4 +1,4 @@
-<h1 align="center">🔥 Task-Manager-App 🔥</h1>
+<h1 align="center">🔥 Task-Manager-Backedn 🔥</h1>
 <hr/>
 
 ### Project currently in progress 👷‍♂️
