@@ -3,7 +3,7 @@
 
 ### Project currently in progress 👷‍♂️
 
-### WHAT YOU CAN DO WITH IT?
+## WHAT YOU CAN DO WITH IT?
 <hr/>
 
 - You can add/remove tasks.
@@ -11,23 +11,35 @@
 - You can login and register.
 - As a admin you can manage all users and tasks.
 <br/>
-<br/>
-### 🚀PURPOSE OF CREATING THE APP🚀
+
+## 🚀PURPOSE OF CREATING THE APP🚀
 
 I made this APP to learn Nest.js and typeORM Databases. This application helped me understand and deepen my knowledge of how powerful Nest js is and how quickly you can build a fantastic backend.
 <br/>
-<br/>
-### TECHNOLOGY:
 
-- Nest.js
-- TypeScript
-- TypeORM
-- MySql DB
-- JWT (Json Web Token)
+## TECH STACK:
+
+<div align="center">
+<a href="https://dev.mysql.com/doc/" target="_blank">
+<img src=https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white style="margin-bottom: 5px;" />
+</a>
+<a href="https://nestjs.com/" target="_blank">
+<img src=https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white style="margin-bottom: 5px;" />
+</a>
+<a href="https://www.typescriptlang.org/docs/" target="_blank">
+<img src=https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white style="margin-bottom: 5px;" />
+</a>
+<a href="https://jwt.io/introduction" target="_blank">
+<img src=https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white style="margin-bottom: 5px;" />
+</a>
+<a href="https://typeorm.io/" target="_blank">
+<img  src="https://camo.githubusercontent.com/5654be8d2a6cdf01e9cf64214cd107a5c8de5f97bc930d816f153771c01a0151/68747470733a2f2f63646e2e737667706f726e2e636f6d2f6c6f676f732f747970656f726d2e737667" alt="typeorm" data-canonical-src="https://cdn.svgporn.com/logos/typeorm.svg" style="width: 40px;" style="height:30px;" />
+</a> 
+</div>  
 <br/>
 <br/>
 
-### TODO:
+## TODO:
 - deployment and migration DB
 - forgot password - send email with code to reset password.
 - finish password hashing process then comper the email, to let users login to prevent holding plain data   password in DB.
@@ -37,7 +49,7 @@ I made this APP to learn Nest.js and typeORM Databases. This application helped 
 <br/>
 <br/>
   
-## NestJs Configuration
+## NestJs DataBase Configuration
 
 Provide MySQL Parameters
 in .env file accordingly :
@@ -86,16 +98,3 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
